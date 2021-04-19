@@ -4,4 +4,4 @@
 
 ### Getting Started
 
-More info can be found here
+More info can be found at [https://nextkit.netlify.app/](https://nextkit.netlify.app/)

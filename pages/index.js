@@ -20,14 +20,14 @@ const Home = () => {
                 <h1>{siteconfig.title}</h1>
                 <p>
                     Next Kit is a{' '}
-                    <Link href="#" prefetch={false}>
+                    <Link href="https://nextjs.org/" prefetch={false}>
                         Next.js
                     </Link>{' '}
                     website starter kit with some popular technologies and an opinionated setup. Its
                     purpose is to give you a head start for your website projects so you can dive
                     into development quicker.
                 </p>
-                <Link prefetch={false} href="#">
+                <Link prefetch={false} href="https://github.com/garrettbland/next-kit/generate">
                     <a
                         className="inline-block bg-gray-900 hover:bg-gray-700 rounded-xl py-3 px-6 text-lg transition-all focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                         style={{ color: 'white', textDecoration: 'none' }}
@@ -54,13 +54,13 @@ const Home = () => {
                 <h2>Getting Started</h2>
                 <p>
                     Getting started is easy, just{' '}
-                    <Link href="#" prefetch={false}>
+                    <Link href="https://github.com/garrettbland/next-kit/generate" prefetch={false}>
                         <a>click here</a>
                     </Link>{' '}
                     to use this template. You will be taken to github to create a new repo using
                     this template. If you would rather look at the code and use the setup in your
                     existing environment,{' '}
-                    <Link href="#" prefetch={false}>
+                    <Link href="https://github.com/garrettbland/next-kit" prefetch={false}>
                         <a>click here</a>
                     </Link>{' '}
                     to look at the public repo.
@@ -70,11 +70,11 @@ const Home = () => {
                 <p>
                     Next.js comes with optional server side routing and API routes. These can be
                     utilized on places like{' '}
-                    <Link href="#" prefetch={false}>
+                    <Link href="https://www.netlify.com/" prefetch={false}>
                         <a>Netlify</a>
                     </Link>
                     (like this site) or{' '}
-                    <Link href="#" prefetch={false}>
+                    <Link href="https://vercel.com/" prefetch={false}>
                         <a>Vercel</a>
                     </Link>{' '}
                     to name a few. Netlify for example will now detect when you are using Next.js,
