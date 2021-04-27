@@ -62,13 +62,30 @@ const Home = () => {
                     to look at the public repo.
                 </p>
                 <div className="h-px w-full bg-blueGray-200 my-8"></div>
+                <h3>Opinionated Typescript Config</h3>
+                <p>
+                    My <code>.tsconfig</code> file utilizes the <code>paths</code> option to easily
+                    import components where needed. For example, importing the <code>Button</code>{' '}
+                    component on this page.
+                </p>
+                <pre>
+                    <code>
+                        <span className="text-orange-500">import</span> Button{' '}
+                        <span className="text-orange-500">from </span>
+                        '@/components/Button'
+                    </code>
+                </pre>
+                <p>
+                    This makes it easier when you get into larger projects and have nested
+                    components.
+                </p>
                 <h3>Bonus Stuff</h3>
                 <p>
                     Next.js comes with optional server side routing and API routes. These can be
                     utilized on places like{' '}
                     <Link href="https://www.netlify.com/" prefetch={false}>
                         <a>Netlify</a>
-                    </Link>
+                    </Link>{' '}
                     (like this site) or{' '}
                     <Link href="https://vercel.com/" prefetch={false}>
                         <a>Vercel</a>
