@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import siteconfig from '../siteconfig.json'
+import Button from '@/components/Button'
 
 const Home = () => {
     return (
@@ -12,9 +13,8 @@ const Home = () => {
             </Head>
             <div className="max-w-2xl mx-auto p-8 prose prose">
                 <small>
-                    Created by{' '}
-                    <Link prefetch={false} href="https://github.com/garrettbland">
-                        <a>https://github.com/garrettbland</a>
+                    <Link prefetch={false} href="https://github.com/garrettbland/next-kit">
+                        <a>https://github.com/garrettbland/next-kit</a>
                     </Link>
                 </small>
                 <h1>{siteconfig.title}</h1>
@@ -27,14 +27,10 @@ const Home = () => {
                     purpose is to give you a head start for your website projects so you can dive
                     into development quicker.
                 </p>
-                <Link prefetch={false} href="https://github.com/garrettbland/next-kit/generate">
-                    <a
-                        className="inline-block bg-gray-900 hover:bg-gray-700 rounded-xl py-3 px-6 text-lg transition-all focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                        style={{ color: 'white', textDecoration: 'none' }}
-                    >
-                        Use this template
-                    </a>
-                </Link>
+                <Button
+                    title={'Use this template'}
+                    href="https://github.com/garrettbland/next-kit/generate"
+                />
                 <div className="h-px w-full bg-blueGray-200 my-8"></div>
                 <h2>Purpose</h2>
                 <p>
