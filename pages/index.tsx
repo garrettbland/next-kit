@@ -1,23 +1,23 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import siteconfig from '../siteconfig.json'
-import Button from '@/components/Button'
+import Head from '@/components/Head'
 
 const Home = () => {
     return (
         <>
-            <Head>
-                <title>
-                    {siteconfig.title} by {siteconfig.author}
-                </title>
-            </Head>
-            <div className="max-w-2xl mx-auto p-8 prose prose">
+            <Head
+                title={siteconfig.title}
+                description={`Next JS Starter Kit by ${siteconfig.author}`}
+                image="https://avatars.githubusercontent.com/u/19270385?v=4"
+                url="https://nextkit.netlify.app/"
+            />
+            <div className="max-w-2xl mx-auto p-8 prose">
                 <small>
                     <Link prefetch={false} href="https://github.com/garrettbland/next-kit">
                         <a>https://github.com/garrettbland/next-kit</a>
                     </Link>
                 </small>
-                <h1>{siteconfig.title}</h1>
+                <h1 className="pt-3">{siteconfig.title}</h1>
                 <p>
                     Next Kit is a{' '}
                     <Link href="https://nextjs.org/" prefetch={false}>
@@ -27,10 +27,15 @@ const Home = () => {
                     purpose is to give you a head start for your website projects so you can dive
                     into development quicker.
                 </p>
-                <Button
-                    title={'Use this template'}
-                    href="https://github.com/garrettbland/next-kit/generate"
-                />
+                <Link prefetch={false} href="https://github.com/garrettbland/next-kit/generate">
+                    <a
+                        className="inline-block bg-gray-900 hover:bg-gray-700 rounded-xl py-3 px-6 text-lg transition-all focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                        style={{ color: 'white', textDecoration: 'none' }}
+                    >
+                        Use this template
+                    </a>
+                </Link>
+
                 <div className="h-px w-full bg-blueGray-200 my-8"></div>
                 <h2>Purpose</h2>
                 <p>
@@ -46,6 +51,7 @@ const Home = () => {
                     <li>Typescript</li>
                     <li>Typography plugin for Tailwind</li>
                     <li>Prettier</li>
+                    <li>SEO Optimized Head Component</li>
                 </ul>
                 <h2>Getting Started</h2>
                 <p>
@@ -61,7 +67,7 @@ const Home = () => {
                     </Link>{' '}
                     to look at the public repo.
                 </p>
-                <div className="h-px w-full bg-blueGray-200 my-8"></div>
+                <div className="h-px w-full bg-blueGray-200 my-8" />
                 <h3>Opinionated Typescript Config</h3>
                 <p>
                     My <code>.tsconfig</code> file utilizes the <code>paths</code> option to easily
@@ -70,15 +76,23 @@ const Home = () => {
                 </p>
                 <pre>
                     <code>
-                        <span className="text-orange-500">import</span> Button{' '}
+                        <span className="text-orange-500">import</span> Head{' '}
                         <span className="text-orange-500">from </span>
-                        '@/components/Button'
+                        '@/components/Head'
                     </code>
                 </pre>
                 <p>
                     This makes it easier when you get into larger projects and have nested
                     components.
                 </p>
+                <div className="h-px w-full bg-blueGray-200 my-8" />
+                <h3>SEO Optimized Head Component</h3>
+                <p>
+                    Included with Next Kit is a <code>Head</code> component that follows (what I
+                    think) are the best practices for on page SEO. It has some nice presents like
+                    your title & description, as well as some basic open graph meta tags.
+                </p>
+                <div className="h-px w-full bg-blueGray-200 my-8" />
                 <h3>Bonus Stuff</h3>
                 <p>
                     Next.js comes with optional server side routing and API routes. These can be
