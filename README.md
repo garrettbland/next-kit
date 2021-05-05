@@ -4,4 +4,10 @@
 
 ### Getting Started
 
-More info can be found at [https://nextkit.netlify.app/](https://nextkit.netlify.app/)
+1. Clone this repo or click "Use this template"
+2. Install packages `yarn install`
+3. Start dev server `yarn dev`
+
+### More Info
+
+Additional info can be found at [https://nextkit.netlify.app/](https://nextkit.netlify.app/)
